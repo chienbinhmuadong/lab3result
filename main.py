@@ -22,6 +22,7 @@ output=Label(my_frame, text="your key will be showed here!")
 output.grid(column=0, row=3)
 
 def move_right(n, key):  # n это число шагов перемещения, key это блок, который мы передаём
+    
     original_key=[i for i in key]
     new_key=''
     for i in range (n):
@@ -33,6 +34,7 @@ def move_right(n, key):  # n это число шагов перемещения
 
 
 def move_left(n,key):   # n это число шагов перемещения, key это блок, который мы передаём
+    
     original_key=[i for i in key]
     new_key=''
     for i in range (n):
@@ -44,7 +46,7 @@ def move_left(n,key):   # n это число шагов перемещения,
 
 
 def click():
-
+    
     block_1=input.get()
     if len(block_1)>5 or len(block_1)<5:
         output["text"]="your block is not valid"
